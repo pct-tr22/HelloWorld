@@ -1,5 +1,31 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container
+    h1= title
+    p Welcome to #{title}
+    
+  div.container
+    form.form-horizontal(method="post", id="loginForm")
+      label Username
+      input.span3(id="username", type="text", name="User", placeholder="Enter your username", class="form-control")
+      label Password
+      input.span3(id="password", type="password", name="Password", placeholder="*******", class="form-control")
+      input.btn(type="submit", value="Log In", class="btn btn-success")
+  
+    div.content
+      table.table.table-striped
+        thead
+          tr
+            th Table
+            th Heading
+        tbody
+          tr
+            td Blah
+            td Test
+          tr
+            td Hello
+            td World
+ 
+  div.footer
+  

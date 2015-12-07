@@ -29,7 +29,10 @@ node_modules
 # Debug log from npm
 npm-debug.log
 
-
 #dynamic content
 
-public/stylesheets/style.css
+public/stylesheets/**/*.css
+
+#generated site.
+
+_site
