@@ -10,10 +10,19 @@ var vinylPaths = require('vinyl-paths');
 var del = require('del');
 var path = require('path');
 
+var argv = require('yargs').argv;
+var github = require('github');
+
 
 gulp.task('default', function() {
   return gulp.src('')
   .pipe(notify({ message: 'welcome to gulp...'}));
+});
+
+
+gulp.task('echo', function(){
+  console.log('password: ' + argv.password);
+  console.log('username: ' + argv.username);
 });
 
 gulp.task('clean', function () {

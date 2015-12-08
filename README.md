@@ -1,10 +1,11 @@
-# Step1
+# Step2
 
-We should be at the point of a running Express site
+We should be at the point of:
+1. Running Express site
+2. Gulp "build" happening
 
-And a Gulp tasks that compiles the LESS files for me and packages the site into _site
-
-
+This is NEW...
+3. A gulp task to Notify GitHub that we're "pending" via Status API
 
 
 
