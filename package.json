@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "debug": "set DEBUG=HelloWorld:* && nodemon ./bin/www"
+    "debug": "set DEBUG=HelloWorld:* && nodemon ./bin/www",
+    "test": "set DEBUG=*:* && node checkout.js",
+    "pretest": "npm uninstall vsocheckout && npm install file:..\\..\\vs\\vsocheckout",
+    "quick" : "set DEBUG=*:* && node checkout.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -14,7 +17,8 @@
     "jade": "~1.11.0",
     "less-middleware": "1.0.x",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "vsocheckout": "file:..\\..\\vs\\vsocheckout"
   },
   "devDependencies": {
     "del": "^2.2.0",
